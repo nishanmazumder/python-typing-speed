@@ -1,28 +1,14 @@
 email = 'test@test.com'
 
-
-# validation = {
-#     '@': True if '@' in email and email.count('@') == 1 else False,
-#     '.': True if '.' in email and ((email[-3] == '.') ^ (email[-4] == '.')) else False,
-#     'space': [x for x in email if x == x.isspace()]
-# }
-
-email_space = 0
-
 validation = {
     '@': True if '@' in email and email.count('@') == 1 else False,
-    '.': True if '.' in email and ((email[-3] == '.') ^ (email[-4] == '.')) else False,
+    '.': True if '.' in email and ((email[-3] == '.') ^ (email[-4] == '.')) else False
 }
 
-if len(email) >= 6:  # 1
+if len(email) >= 6 and ' ' not in email:  # 1
     if email[0].isalpha():  # 2
         if (validation.get('@') and validation.get('.')) == True:
-            for x in email:
-                if x == x.isspace():
-                    email_space = 1
-            print(email_space)
-        else:
-            print("wrong email 3!")
+           print('Success!')
     else:
         print("wrong email 2!")
 else:
