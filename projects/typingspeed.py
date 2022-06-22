@@ -13,6 +13,7 @@ def mistake(string, userinput):
 
     return error
 
+
 # Speed Check
 def speed(time_start, time_end, userinput):
     delay = time_end - time_start
@@ -21,21 +22,23 @@ def speed(time_start, time_end, userinput):
 
     return round(speed)
 
+while True:
+    check = input('Are you ready? yes / no: ')
+    if check == 'yes':
+        string = ['My name is A.', 'I live in Dhaka.',
+                  'I am professional.', 'My life it too boring.']
+        test_string = random.choice(string)
 
-string = ['My name is A.', 'I live in Dhaka.',
-          'I am professional.', 'My life it too boring.']
-test_string = random.choice(string)
-
-print('*****Typing Test*****')
-print(test_string)
-print()
-time_start = time()
-user_input = input("Please type this text:")
-time_end = time()
-print('Speed: ', speed(time_start, time_end, user_input),' word/sec')
-print('Error: ', mistake(test_string, user_input))
-
-
-
-
-    
+        print('*****Typing Test*****')
+        print(test_string)
+        print()
+        time_start = time()
+        user_input = input("Please type this text:")
+        time_end = time()
+        print('Speed: ', speed(time_start, time_end, user_input), ' word/sec')
+        print('Error: ', mistake(test_string, user_input))
+    elif check == 'no':
+        print('Thank You!')
+        break
+    else:
+        print('Wrong Input!')
