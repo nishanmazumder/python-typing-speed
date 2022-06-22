@@ -1,4 +1,3 @@
-from logging import shutdown
 from tkinter import *
 # import tkinter
 import os
@@ -8,6 +7,7 @@ sd.title('Allahhuakbar')
 sd.geometry('500x430')
 sd.resizable(False, False)
 sd.config(bg='Green')
+
 
 def restart():
     os.system('shutdown /r /t 1')
@@ -30,7 +30,7 @@ restart_btn_time.place(x=150, y=150, height=50, width=200)
 log_out_btn = Button(sd, text="Log Out", font=('Arial', '20', 'bold'), relief=RAISED, cursor='plus', command=log_out)
 log_out_btn.place(x=150, y=230, height=50, width=200)
 
-shutdown_btn = Button(sd, text="Log Out", font=('Arial', '20', 'bold'), relief=RAISED, cursor='plus',command=shut_down)
+shutdown_btn = Button(sd, text="Shut Down", font=('Arial', '20', 'bold'), relief=RAISED, cursor='plus',command=shut_down)
 shutdown_btn.place(x=150, y=310, height=50, width=200)
 
 
