@@ -14,6 +14,4 @@ if __name__ == '__main__':
             timeout = 5
         )
 
-        time.sleep(20)
-
-# Run background pythonw notification.py        
+        time.sleep(20)    
