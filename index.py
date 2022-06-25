@@ -86,6 +86,26 @@ list_number = range(10)
 
 # print(list_number)
 
+# values = ['a', 'b', 'c', 'd', 'e']
+# i = 0
+# for value in values:
+#     print(value)
+
+# for i in range(len(values)):
+#     print(i, values[i])
+
+# print(range(len(values)))
+
+# for value in values:
+#     print(i, value)
+#     i+=1
+
+# for i, value in enumerate(values):
+#     print(i, value)
+
+# for value in enumerate(values):
+#     print(value)
+
 # String
 fruit = "Apple"
 paragraph = '''this is

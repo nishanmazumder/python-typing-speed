@@ -1,6 +1,6 @@
 # package: https://github.com/sivel/speedtest-cli
 
-from enum import auto
+from builtins import *
 import speedtest
 from tkinter import *
 
